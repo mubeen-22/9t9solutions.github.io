@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Graphic-designing</title>
+
+    <style>
+       /* /animation part/ */
+          h1 {
+      position: relative;
+      animation: moveToCenter 4s ease forwards; /* Set just one animation property */
+}
+
+@keyframes moveToCenter {
+  
+    25% {
+        background-color: transparent;
+        right: 80px;
+        top: 0px;
+    }
+    100% { /* Move to the final position */
+        background-color: transparent; /* Keep background color consistent */
+        right: 0px; /* Final position */
+        top: 0px; /* Final position */
+    }
+}
+.serive-head{
+    margin-top: 70px;
+}
+.first{
+    max-width: 750px;
+}
+      .first .name {
+        margin-top: 70px;
+        font-family: Manrope, "Manrope Placeholder", sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        color: rgb(0, 0, 0);
+      }
+      .first .web {
+        margin-top: 30px;
+        font-family: Manrope, "Manrope Placeholder", sans-serif;
+        font-weight: 500;
+        font-size: 30px;  
+        color: rgb(150, 150, 150);    
+      }
+      .first .para{
+        margin-top: 20px;
+        font-family: Manrope, "Manrope Placeholder", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px; 
+        font-style: normal0; 
+        color: rgb(0, 0, 0);
+        text-align: justify;
+
+      }
+      .first .include {
+        margin-top: 40px;
+        font-family: Manrope, "Manrope Placeholder", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 25px; 
+        font-style: normal0; 
+        color: #2C2C2C;
+      }
+      .first .list {
+        font-family: Manrope, "Manrope Placeholder", sans-serif;
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 35px; 
+        font-style: normal0; 
+        color: rgb(0, 0, 0);
+      }
+      .first .image{
+        width: 700px;
+        height: auto;
+        border-radius: 20px;
+      }
+
+
+/* /work/ */
+      .upper{
+        margin-top: 0px;
+        font-family: Manrope, "Manrope Placeholder", sans-serif;
+        font-style: normal;
+        font-size: 54px;
+        font-weight: 500;
+        line-height: 77px;
+        color: rgb(0, 0, 0);
+      }
+      .lower {
+        font-family: Manrope, "Manrope Placeholder", sans-serif;
+        font-style: normal;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 45px;
+        color: rgb(0, 0, 0);
+      }
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
+
+ .more{
+  text-align: center;
+}
+
+
+@media screen and (max-width: 767px) {
+    .container{
+        margin-top: 50PX;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+    .serive-head{
+        margin-top: 0PX;
+    }
+    .first .name{
+        font-size: 32;
+        margin-top: 0px;
+    }
+    .first .web{
+        font-size: 26px;
+        margin-top: 10px;
+    }
+    .first .image{
+      width: 450px;
+    }  
+}
+
+/* Portfolio */
+.portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.portfolio-categories {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.portfolio-categories li {
+    cursor: pointer;
+    padding: 10px 20px;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-categories li.active{
+    border: 1px solid rgb(187, 187, 187);
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px 20px;
+}
+
+.portfolio-item {
+    width: calc(33.333% - 20px);
+    background-color: #fff;
+    border: 1px solid #c3c3c3;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.portfolio-item h2 {
+    margin: 0;
+    padding: 15px;
+    color: #000000;
+    font-size: 18px;
+    text-align: left;
+    bottom: 0;
+    width: 100%;
+}
+
+.portfolio-item:hover .potfolio-image {
+    transform: scale(1.05);
+}
+
+.portfolio-image {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .portfolio-item:hover .card-overlay {
+    opacity: 1;
+  }
+  .card-overlay .view-project {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #455A64;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px; /* Adjust padding for vertical centering */
+}
+
+.lightbox-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden; /* Ensure content doesn't overflow */
+
+}
+
+.lightbox-content img {
+    max-width: 100%;
+    max-height: 70vh;
+    margin-bottom: 15px; /* Space between image and caption */
+    transition: transform 0.3s ease;
+    cursor: zoom-in; 
+}
+.lightbox-content img.zoomed {
+    cursor: zoom-out; /* Cursor icon for dragging */
+}
+.lightbox-caption {
+    color: #ccc;
+    text-align: center;
+    padding: 10px;
+    max-width: 80%;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.lightbox-close:hover,
+.lightbox-close:focus {
+    color: #bbb;
+    text-decoration: none;
+}
+
+/* Lightbox Arrows */
+.lightbox-prev,
+.lightbox-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    font-size: 40px;
+    padding: 16px;
+    margin-top: -50px;
+    user-select: none;
+    transition: 0.3s;
+}
+
+.lightbox-prev {
+    left: 0;
+}
+
+.lightbox-next {
+    right: 0;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+@media (min-width: 768px) and (max-width: 1100px) {
+    .portfolio-item {
+        width: calc(50% - 20px);
+    }
+    .first .image{
+      width: 600px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .portfolio-item {
+      width: calc(100% - 20px);
+    }
+    .lightbox-content img {
+      max-width: 90%;
+    }
+    .lightbox-prev,
+    .lightbox-next{
+      font-size: 25px;
+    }
+}
+    </style>
+
+</head>
+<body>
+  
+  <nav>
+    <div class="logo"><a href="home.html" style="color: #000; text-decoration: none;">9T9.<span style="font-size: 18px;">SOLUTIONS</span></a></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a  href="contact.html" type="submit">Conatct </a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+
+
+<!-- out mission -->
+<div class="container" style="margin-bottom: 100px;">
+    
+    <div class="row">
+
+        <div class="col-sm-2">
+          <div class="row">
+            <div class="col-lg-12" style="font-family: Manrope, Manrope Placeholder, sans-serif" >
+              <p class="serive-head" style="color: rgb(150, 150, 150); font-size: 16px; font-weight: 500; line-height:22px;">Service</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-10 first">
+      <h1 class="name">Graphic Designing</h1>
+      <h3 class="web">Visualize Your Brand's Success</h3>
+      <p class="para">At 9T9.solutions, our graphic design experts craft captivating visuals that bring your brand to life. From logos to brochures, business cards to social media graphics, we create stunning designs that reflect your unique identity. Our goal is to elevate your brand's presence and leave a lasting impression on your audience.
+</p>
+
+
+      <p class="include">Services Include:</p>
+      <ul class="list">
+        <li>Logo Design</li>
+        <li>Branding Guidelines</li>
+        <li>Print Materials (Business Cards, Brochures, Flyers)</li>
+        <li>Digital Graphics (Social Media, Email Templates)</li>
+        <li>Infographics</li>
+      </ul> <br>
+
+      <img src="images/1-1.jpg" class="image">
+
+    </div>
+
+
+     </div>
+</div>
+
+
+
+
+<hr style="margin-top: 55px;">
+<br><br><br>
+
+<!-- personal project -->
+<div class="container" style="margin-bottom: 100px;">
+    
+    <div class="row">
+
+        <div class="col-sm-2">
+          <div class="row">
+            <div class="col-lg-12" style="font-family: Manrope, Manrope Placeholder, sans-serif">
+              <p style="color: #2C2C2C; font-size: 20px;  margin-top: 10px;">Work</p>
+            </div>
+          </div>
+        </div>
+  
+
+        <div class="col-sm-10">
+          <div class="row">
+            <div class="col-lg-12">
+              <h3 class="upper">Designing Success</h3>
+              <h3 class="lower">See how we've turned ideas into reality. Dive into the<br> stories of <span style=" font-size: 32px; font-weight: 500;  color: rgb(150, 150, 150);"> successful product designs that make a <br> difference. </span> </h3>
+            </div>
+          </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="portfolio-container">
+  <!-- Category Filter -->
+  <ul class="portfolio-categories">
+      <li class="active" data-category="all">All</li>
+      <li data-category="logo-design">Logo Design</li>
+      <li data-category="thumbnail-design">Thumbnail Design</li>
+      <li data-category="post-design"></li>
+  </ul>
+
+  <!-- Portfolio Items -->
+  <div class="portfolio-items">
+      <div class="portfolio-item" data-category="logo-design" data-image="images/Logo-1.jpg">
+          <div class="portfolio-image" style="background-image: url('images/Logo-1.jpg');"></div>
+          <h2>Coffee Logo Design</h2>
+          <div class="card-overlay">
+              <a href="https://www.behance.net/gallery/207767593/Logo-Design-Coffee" class="view-project">View Project</a>
+            </div>
+      </div>
+      <div class="portfolio-item" data-category="thumbnail-design" data-image="images/Thumb-1.jpg">
+          <div class="portfolio-image" style="background-image: url('images/Thumb-1.jpg');"></div>
+          <h2>Youtube Thumbnail</h2>
+      </div>
+      <div class="portfolio-item" data-category="thumbnail-design" data-image="images/Thumb-2.jpg">
+          <div class="portfolio-image" style="background-image: url('images/Thumb-2.jpg');"></div>
+          <h2>Youtube Thumbnail</h2>
+      </div>
+      <div class="portfolio-item" data-category="thumbnail-design" data-image="images/Thumb-3.jpg">
+          <div class="portfolio-image" style="background-image: url('images/Thumb-3.jpg');"></div>
+          <h2>Youtube Thumbnail</h2>
+      </div>
+      <div class="portfolio-item" data-category="thumbnail-design" data-image="images/Thumb-4.jpg">
+          <div class="portfolio-image" style="background-image: url('images/Thumb-4.jpg');"></div>
+          <h2>Youtube Thumbnail</h2>
+      </div>
+      <div class="portfolio-item" data-category="thumbnail-design" data-image="images/Thumb-5.jpg">
+          <div class="portfolio-image" style="background-image: url('images/Thumb-5.jpg');"></div>
+          <h2>Youtube Thumbnail</h2>
+      </div>
+      <div class="portfolio-item" data-category="thumbnail-design" data-image="images/Thumb-6.jpg">
+          <div class="portfolio-image" style="background-image: url('images/Thumb-6.jpg');"></div>
+          <h2>Youtube Thumbnail</h2>
+      </div>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <div class="lightbox-content">
+      <span class="lightbox-prev">&#10094;</span>
+      <img id="lightbox-img" src="" alt="">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+      <span class="lightbox-next">&#10095;</span>
+  </div>
+</div>
+
+
+<br>
+<div class="more">
+      <a href="https://www.behance.net/hafsahafsa14" class="view-all-projects">View more projects</a>
+</div>
+<br><br>
+
+
+
+
+<!-- footer -->
+<div class="foot" style="  display: flex; justify-content: space-between; align-items: center;">
+  <div class="footer-content">
+    <p class="contact">Contact</p>
+    <h3 class="footer-head">Let's start creating together</h3>
+    <!-- <h3 class="text-1">Let's start </h3>
+    <h3 class="text-2">creating together</h3> -->
+    <a  href="#" class="btn talk" style="text-decoration: none; background-color:#eeeeee ; color: #2C2C2C; border-radius: 30px; border: none; padding: 15px 22px 15px 22px; " type="submit">Let's talk <i class="fa fa-arrow-right"></i></a>
+  </div>
+
+  <div class="account" style=" align-items: center;">
+    <p class="face" style=" text-align: right; margin-top: 0px;">Facebook </p>
+    <p  class="insta" style="text-align: right;">Instagram </p>
+  </div>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script>
+      // script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const categoryItems = document.querySelectorAll('.portfolio-categories li');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const lightboxClose = document.querySelector('.lightbox-close');
+    const lightboxPrev = document.querySelector('.lightbox-prev');
+    const lightboxNext = document.querySelector('.lightbox-next');
+
+    let currentIndex = 0;
+    let currentCategoryItems = [];
+    let isZoomed = false;
+
+    // Function to update lightbox content
+    function updateLightbox(index) {
+        const currentItem = currentCategoryItems[index];
+        const imgSrc = currentItem.getAttribute('data-image');
+        const captionText = currentItem.querySelector('h2').textContent;
+
+        lightboxImg.src = imgSrc;
+        lightboxCaption.textContent = captionText;
+        lightbox.style.display = 'flex';
+        resetZoom(); 
+    }
+
+    // Function to reset zoom
+    function resetZoom() {
+        isZoomed = false;
+        lightboxImg.classList.remove('zoomed');
+        lightboxImg.style.transform = 'translate(0, 0) scale(1)';
+    }
+
+    // Function to get visible items based on selected category
+    function getVisibleItems() {
+        return Array.from(document.querySelectorAll('.portfolio-item[style*="display: block"]'));
+    }
+
+    // Category Filter
+    categoryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const category = item.getAttribute('data-category');
+
+            // Remove 'active' class from all category items
+            categoryItems.forEach(li => li.classList.remove('active'));
+            // Add 'active' class to the clicked item
+            item.classList.add('active');
+
+            // Show/Hide portfolio items based on the selected category
+            portfolioItems.forEach(project => {
+                const projectCategory = project.getAttribute('data-category');
+                
+                if (category === 'all' || projectCategory === category) {
+                    project.style.display = 'block';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+
+            // Update current category items
+            currentCategoryItems = getVisibleItems();
+        });
+    });
+
+    // Lightbox Functionality
+    portfolioItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            currentCategoryItems = getVisibleItems();
+            currentIndex = currentCategoryItems.indexOf(item);
+
+            updateLightbox(currentIndex);
+        });
+    });
+
+    // Close Lightbox
+    lightboxClose.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+    });
+
+    // Close lightbox when clicking outside the image
+    window.addEventListener('click', (event) => {
+        if (event.target === lightbox) {
+            lightbox.style.display = 'none';
+        }
+    });
+
+    // Lightbox Navigation
+    lightboxPrev.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateLightbox(currentIndex);
+        }
+    });
+
+    lightboxNext.addEventListener('click', () => {
+        if (currentIndex < currentCategoryItems.length - 1) {
+            currentIndex++;
+            updateLightbox(currentIndex);
+        }
+    });
+
+    lightboxImg.addEventListener('click', (e) => {
+        if (!isZoomed) {
+            isZoomed = true;
+            lightboxImg.classList.add('zoomed');
+            lightboxImg.style.transform = 'scale(2)';
+            // Center the zoomed-in image
+            const rect = lightboxImg.getBoundingClientRect();
+            const offsetX = e.clientX - rect.left;
+            const offsetY = e.clientY - rect.top;
+            lightboxImg.style.transformOrigin = `${offsetX}px ${offsetY}px`;
+        } else {
+            resetZoom();
+        }
+    });
+
+    const cardOverlays = document.querySelectorAll('.card-overlay');
+    cardOverlays.forEach(overlay => {
+        overlay.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+    });
+});
+
+     </script>
+     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
